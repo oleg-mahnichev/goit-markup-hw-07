@@ -16,6 +16,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!---------------------------------------------------HEADER---------------------------------------------------->
@@ -59,7 +60,93 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-open-btn"
+          data-menu-open
+          type="button"
+           >   <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/sprite.svg#burger"></use>
+          </svg>
+        </button>
       </div>
+     </div>
+      <!--------------------------------------------MOBILE MENU  -->
+     <div class="mob-menu is-hidden"  data-menu>
+        <div>
+          <button class="menu-close-btn" data-menu-close type="button">
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close-cros"></use>
+            </svg>
+          </button>
+
+          <ul class="menu-nav-list list">
+            <li class="menu-item">
+              <a class="menu-item-link link " href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="menu-item">
+              <a class="menu-item-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="menu-item ">
+              <a class="menu-item-link link current" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="menu-contacts-list list">
+             <li class="menu-item-phone">
+              <a class="menu-item-phone-link link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="menu-item-email">
+              <a
+                class="menu-item-email-link link"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com
+              </a>
+            </li>
+            </ul>
+                 <div class="soc-link-container">
+            <ul class="soc-list-menu list">
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link link">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link link">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link ink">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link link">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+            </div>
+       
+      </div>
+
     </header>
     <!-----------------------------------------Main-------------------------------------------->
     <main>
@@ -80,7 +167,7 @@
           <ul class="about-us list">
             <li class="about-list-wrap">
               <div class="features-thumb">
-                <svg class="features-icon">
+                <svg class="features-icon visually-hidden">
                   <use href="./images/sprite.svg#icon-features-antenna"></use>
                 </svg>
               </div>
@@ -92,7 +179,7 @@
             </li>
             <li class="about-list-wrap">
               <div class="features-thumb">
-                <svg class="features-icon">
+                <svg class="features-icon visually-hidden">
                   <use href="./images/sprite.svg#icon-features-clock"></use>
                 </svg>
               </div>
@@ -104,7 +191,7 @@
             </li>
             <li class="about-list-wrap">
               <div class="features-thumb">
-                <svg class="features-icon">
+                <svg class="features-icon visually-hidden">
                   <use href="./images/sprite.svg#icon-features-diagram"></use>
                 </svg>
               </div>
@@ -116,7 +203,7 @@
             </li>
             <li class="about-list-wrap">
               <div class="features-thumb">
-                <svg class="features-icon">
+                <svg class="features-icon visually-hidden">
                   <use href="./images/sprite.svg#icon-features-astronaut"></use>
                 </svg>
               </div>
@@ -130,7 +217,7 @@
         </div>
       </section>
       <!-----------------------------------------WHAT ARE WE DOING----------------------------->
-      <section class="wawd-section">
+      <section class="wawd-section visually-hidden">
         <div class="container wawd-container">
           <h2 class="wawd-title">What are we doing</h2>
           <ul class="wawd list">
@@ -168,8 +255,20 @@
       <section class="ourteam-section">
         <div class="container">
           <h2 class="ourteam-title">Our Team</h2>
+          
           <ul class="ourteam-cards list">
             <li class="card-info">
+              <!-- <picture>
+                <source
+                srcset="./images/team_card_1-min.jpg 1x, ./images/team_card_1-2x-min.jpg 2x "
+                media="(max-width:767px)">
+               <source
+                srcset="./images/team_card_1-min.jpg 1x, ./images/team_card_1-2x-min.jpg 2x "
+                media="(min-width:768px)">
+                <source
+                srcset="./images/team_card_1-min.jpg 1x, ./images/team_card_1-2x-min.jpg 2x "
+                media="(min-width:1200px)">
+              </picture> -->
               <img
                 class="ourteam-item-img"
                 src="./images/team_card_1-min.jpg"
@@ -183,28 +282,28 @@
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                      <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                     <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                    <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                     <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -227,28 +326,28 @@
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                    <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+             <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+          <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                 <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -270,28 +369,28 @@
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+           <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+              <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                   <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -314,28 +413,28 @@
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                   <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+              <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                   <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link">
-                      <svg class="team-soc-icon">
+                    <svg class="team-soc-icon" width="16" height="16">
                         <use href="./images/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -350,6 +449,7 @@
       <section class="customers-section">
         <div class="customers-container container">
           <h2 class="customers-title">Customers</h2>
+
           <ul class="cutomers-list list">
             <li class="customers-item">
               <a href="" class="customer-link link">
@@ -420,36 +520,36 @@
           <ul class="soc-list-footer list">
             <li class="soc-list-footer-item">
               <a href="" class="soc-list-footer-link link">
-                <svg class="soc-list-footer-icon">
+                <svg class="soc-list-footer-icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-list-footer-item">
               <a href="" class="soc-list-footer-link link">
-                <svg class="soc-list-footer-icon">
+                <svg class="soc-list-footer-icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-list-footer-item">
               <a href="" class="soc-list-footer-link ink">
-                <svg class="soc-list-footer-icon">
+              <svg class="soc-list-footer-icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="soc-list-footer-item">
               <a href="" class="soc-list-footer-link link">
-                <svg class="soc-list-footer-icon">
+             <svg class="soc-list-footer-icon" width="24" height="24">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <!-- SUBSCRIBE CONTAINER -->
-        <form class="subscribe-form">
+      <!-- SUBSCRIBE CONTAINER -->
+    <form class="subscribe-form">
           <p class="subscribe-title">Subscribe</p>
           <input
             class="subscribe-input"
@@ -465,28 +565,7 @@
             </svg>
           </button>
         </form>
-        <!-- <div class="subscribe-container">
-          <p class="subscribe-footer-title">Subscribe</p>
-          <div class="subscribe-block">
-            <label for="subscribe" class="visually-hidden"></label>
-            <input
-              class="input-subscribe"
-              type="email"
-              name="subscribe"
-              id="subscribe"
-              placeholder="E-mail"
-            />
-            <button class="subscribe-btn btn" type="submit">
-              <span class="subscribe-btn-text"
-                >Subscribe
-                <svg class="plane" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-plane"></use>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div> -->
-      </div>
+          </div> 
     </footer>
     <!--------------------------------------- MODAL WINDOW -->
 
@@ -577,5 +656,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

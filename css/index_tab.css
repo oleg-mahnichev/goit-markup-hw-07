@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /**-----------------------HEADER   */
+  .header-container {
+    height: 72px;
+  }
+
+  /**-----------------------HERO  */
+  .hero-container {
+    padding: 112px 136px;
+  }
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    /* or 107% */
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  .hero-btn {
+    margin-top: 36px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-nav-list,
+  .header-contacts {
+    display: none;
+  }
+}

@@ -1,5 +1,30 @@
+@media screen and (max-width: 427px) {
+  .container {
+    width: 100%;
+  }
+  .menu-item-phone-link {
+    font-size: 26px;
+  }
+  .soc-list-menu {
+    gap: 26px;
+  }
+  .modal {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
+  }
+  .menu-item-phone-link {
+    font-size: 36px;
+  }
+  .soc-list-menu {
+    gap: 56px;
+    justify-content: center;
+  }
+  .modal {
+    width: 392px;
+    min-height: 586px;
   }
 }

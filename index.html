@@ -78,7 +78,9 @@
 
           <ul class="menu-nav-list list">
             <li class="menu-item">
-              <a class="menu-item-link link" href="./index.html">Studio</a>
+              <a class="menu-item-link link current" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="menu-item">
               <a class="menu-item-link link" href="./portfolio.html"
@@ -86,7 +88,7 @@
               >
             </li>
             <li class="menu-item">
-              <a class="menu-item-link link current" href="">Contacts</a>
+              <a class="menu-item-link link" href="">Contacts</a>
             </li>
           </ul>
         </div>
@@ -106,38 +108,36 @@
               </a>
             </li>
           </ul>
-          <div class="soc-link-container">
-            <ul class="soc-list-menu list">
-              <li class="soc-list-menu-item">
-                <a href="" class="soc-list-menu-link link">
-                  <svg class="soc-list-menu-icon">
-                    <use href="./images/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-list-menu-item">
-                <a href="" class="soc-list-menu-link link">
-                  <svg class="soc-list-menu-icon">
-                    <use href="./images/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-list-menu-item">
-                <a href="" class="soc-list-menu-link ink">
-                  <svg class="soc-list-menu-icon">
-                    <use href="./images/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="soc-list-menu-item">
-                <a href="" class="soc-list-menu-link link">
-                  <svg class="soc-list-menu-icon">
-                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="soc-list-menu list">
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link link">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link link">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link ink">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="soc-list-menu-item">
+              <a href="" class="soc-list-menu-link link">
+                <svg class="soc-list-menu-icon">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -217,7 +217,7 @@
             <li>
               <img
                 class="wawd-item-img"
-                src="./images/img_1.jpg"
+                src="./images/wawd_img1_desk_1x-min.jpg"
                 alt="Mac"
                 width="360"
                 height="300"
@@ -226,7 +226,7 @@
             <li>
               <img
                 class="wawd-item-img"
-                src="./images/img_2.jpg"
+                src="./images/wawd_img2_desk_1x-min.jpg"
                 alt="App"
                 width="360"
                 height="300"
@@ -235,7 +235,7 @@
             <li>
               <img
                 class="wawd-item-img"
-                src="./images/img_3.jpg"
+                src="./images/wawd_img_desk_1x-min.jpg"
                 alt="Sync"
                 width="360"
                 height="300"
@@ -251,24 +251,40 @@
 
           <ul class="ourteam-cards list">
             <li class="card-info">
-              <!-- <picture>
+              <picture>
                 <source
-                srcset="./images/team_card_1-min.jpg 1x, ./images/team_card_1-2x-min.jpg 2x "
-                media="(max-width:767px)">
-               <source
-                srcset="./images/team_card_1-min.jpg 1x, ./images/team_card_1-2x-min.jpg 2x "
-                media="(min-width:768px)">
+                  srcset="
+                    ./images/team_card_1_mob_1x-min.jpg 1x,
+                    ./images/team_card_1_mob_2x-min.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/jpeg"
+                />
                 <source
-                srcset="./images/team_card_1-min.jpg 1x, ./images/team_card_1-2x-min.jpg 2x "
-                media="(min-width:1200px)">
-              </picture> -->
-              <img
-                class="ourteam-item-img"
-                src="./images/team_card_1-min.jpg"
-                alt="Mark Guerrero"
-                width="264"
-                height="260"
-              />
+                  srcset="
+                    ./images/team_card_1_mob_1x-min.jpg 1x,
+                    ./images/team_card_1_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_1_mob_1x-min.jpg 1x,
+                    ./images/team_card_1_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="ourteam-item-img"
+                  src="./images/team_card_1_desk_1x-min.jpg"
+                  alt="Mark Guerrero"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="title-cards-team">
                 <h3 class="ourteam-name-item">Mark Guerrero</h3>
                 <p class="ourteam-job-item">Product Designer</p>
@@ -306,13 +322,40 @@
             </li>
 
             <li class="card-info">
-              <img
-                class="ourteam-item-img"
-                src="./images/team_card_2-min.jpg"
-                alt="Tom Ford"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_2_mob_1x-min.jpg 1x,
+                    ./images/team_card_2_mob_2x-min.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_2_mob_1x-min.jpg 1x,
+                    ./images/team_card_2_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_2_mob_1x-min.jpg 1x,
+                    ./images/team_card_2_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="ourteam-item-img"
+                  src="./images/team_card_2_mob_1x-min.jpg"
+                  alt="Tom Ford"
+                  width="264"
+                  height="260"
+                />
+              </picture>
+
               <div class="title-cards-team">
                 <h3 class="ourteam-name-item">Tom Ford</h3>
                 <p class="ourteam-job-item">Frontend Developer</p>
@@ -349,13 +392,39 @@
               </div>
             </li>
             <li class="card-info">
-              <img
-                class="ourteam-item-img"
-                src="./images/team_card_3-min.jpg"
-                alt="Camila Garcia"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_3_mob_1x-min.jpg 1x,
+                    ./images/team_card_3_mob_2x-min.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_3_mob_1x-min.jpg 1x,
+                    ./images/team_card_3_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_3_mob_1x-min.jpg 1x,
+                    ./images/team_card_3_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="ourteam-item-img"
+                  src="./images/team_card_3_mob_1x-min.jpg"
+                  alt="Camila Garcia"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="title-cards-team">
                 <h3 class="ourteam-name-item">Camila Garcia</h3>
                 <p class="ourteam-job-item">Marketing</p>
@@ -393,13 +462,39 @@
             </li>
 
             <li class="card-info">
-              <img
-                class="ourteam-item-img"
-                src="./images/team_card_4-min.jpg"
-                alt="Daniel Wilson"
-                width="264"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team_card_4_mob_1x-min.jpg 1x,
+                    ./images/team_card_4_mob_2x-min.jpg 2x
+                  "
+                  media="(max-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_4_mob_1x-min.jpg 1x,
+                    ./images/team_card_4_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 767px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/team_card_4_mob_1x-min.jpg 1x,
+                    ./images/team_card_4_mob_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="ourteam-item-img"
+                  src="./images/team_card_4_mob_1x-min.jpg"
+                  alt="Daniel Wilson"
+                  width="264"
+                  height="260"
+                />
+              </picture>
               <div class="title-cards-team">
                 <h3 class="ourteam-name-item">Daniel Wilson</h3>
                 <p class="ourteam-job-item">UI Designer</p>
@@ -541,7 +636,6 @@
             </li>
           </ul>
         </div>
-        <!-- SUBSCRIBE CONTAINER -->
         <form class="subscribe-form">
           <p class="subscribe-title">Subscribe</p>
           <input

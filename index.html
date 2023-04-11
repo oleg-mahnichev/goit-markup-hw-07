@@ -213,31 +213,59 @@
           <h2 class="wawd-title">What are we doing</h2>
           <ul class="wawd list">
             <li>
-              <img
-                class="wawd-item-img"
-                src="./images/wawd_img1_desk_1x-min.jpg"
-                alt="Mac"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/wawd_img1_desk_1x-min.jpg 1x,
+                    ./images/wawd_img1_desk_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg" />
+                <img
+                  class="wawd-item-img"
+                  src="./images/wawd_img1_desk_1x-min.jpg"
+                  alt="Mac"
+                  width="360"
+                  height="300"
+              /></picture>
             </li>
             <li>
-              <img
-                class="wawd-item-img"
-                src="./images/wawd_img2_desk_1x-min.jpg"
-                alt="App"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/wawd_img2_desk_1x-min.jpg 1x,
+                    ./images/wawd_img2_desk_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="wawd-item-img"
+                  src="./images/wawd_img2_desk_1x-min.jpg"
+                  alt="App"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
             <li>
-              <img
-                class="wawd-item-img"
-                src="./images/wawd_img3_desk_1x-min.jpg"
-                alt="Sync"
-                width="360"
-                height="300"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/wawd_img3_desk_1x-min.jpg 1x,
+                    ./images/wawd_img3_desk_2x-min.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="wawd-item-img"
+                  src="./images/wawd_img3_desk_1x-min.jpg"
+                  alt="Sync"
+                  width="360"
+                  height="300"
+                />
+              </picture>
             </li>
           </ul>
         </div>

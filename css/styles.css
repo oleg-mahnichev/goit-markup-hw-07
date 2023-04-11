@@ -89,6 +89,7 @@ img {
 /** -------------------------HEADER  */
 .header-container {
   height: 70px;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 }

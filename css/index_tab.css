@@ -68,10 +68,6 @@
     color: var(--title-text-color);
     transition: color --timing-function;
   }
-  .header-item-link:hover,
-  .header-item-link:focus {
-    color: var(--hover-link-color);
-  }
 
   .header-item-link.current {
     color: var(--corporate-color);
@@ -209,7 +205,6 @@
   .subscribe-form .subscribe-input {
     width: 264px;
     margin-bottom: 0px;
-    padding: 0px;
   }
   .subsctibe-button {
     margin-left: 24px;

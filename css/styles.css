@@ -536,9 +536,10 @@ img {
   color: #ffffff;
   margin-bottom: 16px;
 }
-
 .subscribe-input {
   width: 100%;
+  margin: 0;
+  padding: 8px 16px;
   height: 40px;
   font-size: 12px;
   line-height: 1.5;
@@ -564,7 +565,7 @@ img {
   outline: none;
   border-color: var(--corporate-color);
   color: var(--footer-text-color);
-}
+   }
 
 .subsctibe-button {
   position: relative;

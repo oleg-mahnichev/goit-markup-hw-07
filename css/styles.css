@@ -406,6 +406,7 @@ img {
 }
 .customers-container {
   width: 100%;
+  ma
 }
 
 .customers-title {
@@ -576,7 +577,7 @@ img {
   color: var(--footer-span-text-color);
   background-color: var(--corporate-color);
   border-radius: 4px;
-  border: none;
+  border: transparent;
 
   transition: background-color var(--timing-function);
 

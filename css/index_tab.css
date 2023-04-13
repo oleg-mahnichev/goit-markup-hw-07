@@ -88,8 +88,7 @@
   }
 
   /**-----------------------HERO  */
-  .hero-container {
-    margin: 0 auto 96px;
+  .hero-section {
     padding: 112px 136px;
     background-color: var(--hero-background-color);
     background-image: linear-gradient(
@@ -104,87 +103,119 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .hero-container {
+    .hero-section {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
         url(../images/hero-bg-tab-2x-min.jpg);
     }
-  }
-  .hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-  }
-  .hero-btn {
-    margin-top: 36px;
-  }
-  /**-------------------------ABOUT  */
+    .hero-container {
+      padding: 0;
+      flex-direction: column;
+    }
+    .hero-title {
+      width: 496px;
+    }
 
-  .about-container {
-    margin-bottom: 96px;
-  }
-  .about-us {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-  }
+    .hero-title {
+      font-size: 56px;
+      line-height: 1.07;
+    }
+    .hero-btn {
+      margin-top: 36px;
+    }
+    /**-------------------------ABOUT  */
 
-  .about-list-wrap {
-    width: 356px;
-  }
-  .about-title-item {
-    text-align: left;
-  }
-  /**--------------------OUR TEAM  */
-  .ourteam-section {
-    margin-bottom: 0px;
-  }
-  .ourteam-cards {
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-  .card-info:not(:last-child) {
-    margin-bottom: 0px;
-  }
-  /**---------------------CUSTOMERS */
-  .customers-section {
-    margin-bottom: 0px;
-  }
-  .customers-container {
-    padding: 108px 96px;
-  }
-  .cutomers-list {
-    column-gap: 24px;
-  }
-  .customer-link {
-    width: 160px;
-    height: 88px;
-  }
-  /**--------------------FOOTER  */
-  .footer-container {
-    padding-left: 108px;
-    padding-right: 108px;
-    justify-content: left;
-    text-align: left;
-    column-gap: 24px;
-    row-gap: 72px;
-  }
-  .footer-logo-container {
-    margin-bottom: 0px;
-  }
-  .input-container {
-    justify-content: center;
-  }
-  .subscribe-form .subscribe-input {
-    width: 264px;
-    margin-bottom: 0px;
-  }
-  .subsctibe-button {
-    margin-left: 24px;
-  }
-  /**-------------------------------MODAL */
-  .modal {
-    width: 408px;
+    .about-list-wrap {
+      width: 736px;
+    }
+    .about-list-wrap:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    .about-us {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 24px;
+      row-gap: 72px;
+    }
+
+    .about-list-wrap {
+      width: 356px;
+    }
+    .about-title-item {
+      text-align: left;
+    }
+    /**--------------------OUR TEAM  */
+    .ourteam-section {
+      padding: 96px 108px;
+    }
+    .ourteam-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .ourteam-cards {
+      width: 552px;
+      column-gap: 24px;
+      row-gap: 72px;
+    }
+    .card-info:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    /**---------------------CUSTOMERS */
+    .customers-section {
+      padding: 96px 108px;
+    }
+    .customers-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      width: 100%;
+    }
+    .cutomers-list {
+      width: 552px;
+      justify-content: center;
+    }
+    .customer-link {
+      width: 168px;
+      height: 88px;
+    }
+    /**--------------------FOOTER  */
+    .footer {
+      padding: 96px 108px;
+    }
+    .footer-container {
+      width: 552px;
+      /* height: 264px; */
+      text-align: left;
+      row-gap: 72px;
+      column-gap: 24px;
+      justify-content: space-between;
+    }
+    .footer-logo-container {
+      margin-bottom: 0px;
+    }
+    .soc-link-container {
+      margin-bottom: 0px;
+    }
+    .input-container {
+      justify-content: center;
+    }
+    .subsctibe-button {
+      margin-top: 0px;
+    }
+
+    .subscribe-form .subscribe-input {
+      width: 264px;
+    }
+    .subsctibe-button {
+      margin-left: 24px;
+    }
+    /**-------------------------------MODAL */
+    .modal {
+      width: 408px;
+    }
   }
 }

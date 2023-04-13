@@ -180,9 +180,6 @@ img {
   text-transform: capitalize;
   color: #4d5ae5;
 }
-.menu-item-email {
-  margin-bottom: 48px;
-}
 .menu-item-email-link {
   font-weight: 500;
   font-size: 20px;
@@ -190,25 +187,24 @@ img {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.menu-contacts-list {
+  margin-bottom: 48px;
+}
 
-.soc-link-container {
-  width: 328px;
-  height: 40px;
-}
 .soc-list-menu {
-  width: 328px;
+  max-width: 328px;
   display: flex;
-  gap: 56px;
 }
+
 .soc-list-menu-item {
   width: 40px;
   height: 40px;
   background-color: var(--hero-btn-background);
   border-radius: 50%;
 }
-/* .soc-list-menu-item:not(:last-child) {
+.soc-list-menu-item:not(:last-child) {
   margin-right: 56px;
-} */
+}
 .soc-list-menu-link {
   width: 100%;
   height: 100%;
@@ -217,7 +213,6 @@ img {
   align-items: center;
   justify-content: center;
 
-  border-radius: 50%;
   transition: background var(--timing-function);
 }
 .soc-list-menu-icon {
@@ -226,12 +221,7 @@ img {
 }
 
 /**------------------------------HERO */
-.hero-container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.hero-section {
   background-color: var(--hero-background-color);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -241,13 +231,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 112px 54px;
-  margin-bottom: 96px;
+  padding: 112px 0;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-container {
+  .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -255,7 +244,16 @@ img {
       url(../images/hero-bg-mobile-2x-min.jpg);
   }
 }
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-title {
+  width: 320px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -293,7 +291,7 @@ img {
 }
 /**-----------------------------ABOUT  */
 .about {
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 .about-us {
   width: 100%;
@@ -322,9 +320,7 @@ img {
 /**--------------------OUR TEAM  */
 .ourteam-section {
   background-color: var(--ourteam-background);
-  padding-top: 96px;
-  padding-bottom: 96px;
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
 
 .ourteam-title {
@@ -400,12 +396,8 @@ img {
 }
 /**------------------------- CUSTOMERS */
 .customers-section {
-  margin-bottom: 96px;
+  padding: 96px 0;
 }
-.customers-container {
-  width: 100%;
-}
-
 .customers-title {
   margin-bottom: 72px;
   text-align: center;
@@ -421,8 +413,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 16px;
   row-gap: 72px;
+  column-gap: 24px;
 }
 
 .customer-link {
@@ -451,17 +443,13 @@ img {
 .footer {
   width: 100%;
   background-color: var(--footer-background);
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 0;
 }
 .footer-container {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  /* align-items: baseline; */
-  /* outline: 1px solid red; */
 }
 .footer-logo-container {
   margin-bottom: 72px;
@@ -531,11 +519,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
 }
 .subscribe-input {
   width: 100%;
-  margin-bottom: 16px;
+  margin-top: 16px;
+
   padding: 8px 16px;
   align-items: center;
 
@@ -558,7 +546,7 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(247, 243, 243, 0.6);
-  padding: 8px 16px;
+  padding: -8px -16px;
 }
 
 .subscribe-input:focus {
@@ -568,6 +556,7 @@ img {
 }
 
 .subsctibe-button {
+  margin-top: 16px;
   position: relative;
   padding: 8px 64px 8px 24px;
 
